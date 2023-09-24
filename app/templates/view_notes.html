@@ -1,0 +1,18 @@
+{% extends 'base.html' %} <!-- Extending the base.html template -->
+
+{% block content %} <!-- Defining a content block to be inserted into the base.html template -->
+  <h2>My Notes</h2> <!-- Heading for the list of notes -->
+  <ul>
+    {% for note in notes %}
+      <li>
+        <strong>{{ note.title }}</strong><br> <!-- Displaying the note title in bold -->
+        {{ note.content }}<br> <!-- Displaying the note content -->
+        <a href="{{ url_for('edit_note', id=note.id) }}">Edit</a> | <!-- Link to edit the note -->
+        <form method="post" action="{{ url_for('delete_note', id=note.id) }}" style="display:inline;">
+          <button type="submit" class="btn-link">Delete</button> <!-- Form for deleting the note with a delete button -->
+        </form>
+      </li>
+    {% endfor %}
+  </ul>
+  <a href="{{ url_for('create_note') }}">Create New Note</a> <!-- Link to create a new note -->
+{% endblock %}

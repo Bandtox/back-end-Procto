@@ -1,0 +1,165 @@
+/* Add CSS styles for the entire page */
+body {
+    font-family: Arial, sans-serif; /* Set the font family for the entire page */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-color: #f0f0f0; /* Set background color */
+}
+
+/* Style the navigation bar */
+nav {
+    background-color: #333; /* Set background color */
+    color: #fff; /* Set text color */
+    padding: 10px 0; /* Add padding */
+}
+
+/* Style the navigation list */
+nav ul {
+    list-style: none; /* Remove list bullets */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center align items horizontally */
+}
+
+/* Style navigation list items */
+nav li {
+    margin: 0 20px; /* Add margin to separate items */
+}
+
+/* Style navigation links */
+nav a {
+    text-decoration: none; /* Remove underlines */
+    color: #fff; /* Set link color */
+}
+
+/* Style the main content container */
+.container {
+    max-width: 800px; /* Set maximum width */
+    margin: 20px auto; /* Center the container horizontally */
+    padding: 20px; /* Add padding */
+    background-color: #fff; /* Set background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add box shadow */
+}
+
+/* Style the form container */
+form {
+    max-width: 400px; /* Set maximum width */
+    margin: 0 auto; /* Center the form horizontally */
+    padding: 20px; /* Add padding */
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 5px; /* Add border radius */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
+/* Style the form header */
+h1 {
+    font-size: 24px; /* Set font size */
+    text-align: center; /* Center align text */
+    margin-bottom: 20px; /* Add margin at the bottom */
+}
+
+/* Style form labels */
+label {
+    display: block; /* Display labels as blocks */
+    font-weight: bold; /* Set font weight */
+    margin-bottom: 5px; /* Add margin at the bottom */
+}
+
+/* Style form input fields and textareas */
+input[type="text"],
+textarea {
+    width: 100%; /* Set input width to 100% */
+    padding: 10px; /* Add padding */
+    margin-bottom: 15px; /* Add margin at the bottom */
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 4px; /* Add border radius */
+    font-size: 16px; /* Set font size */
+}
+
+/* Style the submit button */
+button[type="submit"] {
+    background-color: #007BFF; /* Set background color */
+    color: #fff; /* Set text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Add padding */
+    border-radius: 4px; /* Add border radius */
+    font-size: 18px; /* Set font size */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Style the submit button on hover */
+button[type="submit"]:hover {
+    background-color: #0056b3; /* Change background color on hover */
+}
+
+/* Style the cancel link */
+a {
+    text-decoration: none; /* Remove underlines */
+    color: #007BFF; /* Set link color */
+    font-weight: bold; /* Set font weight */
+    padding: 10px;
+}
+
+/* Style the cancel link on hover */
+a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Style the confirmation box */
+.confirmation-box {
+    max-width: 400px; /* Set maximum width */
+    margin: 100px auto; /* Center the box vertically and horizontally */
+    background-color: #fff; /* Set background color */
+    padding: 20px; /* Add padding */
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 5px; /* Add border radius */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
+/* Style the confirmation header */
+h2 {
+    font-size: 24px; /* Set font size */
+    color: #333; /* Set text color */
+    margin-bottom: 10px; /* Add margin at the bottom */
+}
+
+/* Style the confirmation message */
+p {
+    font-size: 18px; /* Set font size */
+    color: #555; /* Set text color */
+    margin-bottom: 20px; /* Add margin at the bottom */
+}
+
+/* Style the buttons inside the confirmation box */
+button {
+    padding: 10px 20px; /* Add padding */
+    font-size: 18px; /* Set font size */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Add border radius */
+    cursor: pointer; /* Change cursor to pointer */
+    margin-right: 10px; /* Add margin to separate buttons */
+}
+
+/* Style the "Yes, Delete" button */
+button.btn-danger {
+    background-color: #d9534f; /* Set background color */
+    color: #fff; /* Set text color */
+}
+
+/* Style the "Cancel" link within the confirmation box */
+a {
+    text-decoration: none; /* Remove underlines */
+    color: #333; /* Set link color */
+    font-size: 18px; /* Set font size */
+}
+
+/* Hover styles for buttons */
+button:hover {
+    opacity: 0.8; /* Reduce opacity on hover */
+}
+
+/* Hover styles for links */
+a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}

@@ -1,0 +1,10 @@
+{% extends 'base.html' %} <!-- Extending the base.html template -->
+
+{% block content %} <!-- Defining a content block to be inserted into the base.html template -->
+  <h2>Delete Confirmation</h2> <!-- Heading for the delete confirmation page -->
+  <p>Are you sure you want to delete this note?</p> <!-- Confirmation message -->
+  <form method="post" action="{{ url_for('delete_note', id=note.id) }}"> <!-- Form for confirming note deletion -->
+    <button type="submit" class="btn btn-danger">Yes, Delete</button> <!-- Submit button for confirming deletion -->
+  </form>
+  <a href="{{ url_for('index') }}">Cancel</a> <!-- Link to the 'index' page for canceling note deletion -->
+{% endblock %}

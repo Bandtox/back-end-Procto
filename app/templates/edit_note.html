@@ -1,0 +1,17 @@
+{% extends 'base.html' %} <!-- Extending the base.html template -->
+
+{% block content %} <!-- Defining a content block to be inserted into the base.html template -->
+  <h2>Edit Note</h2> <!-- Heading for the edit note page -->
+  <form method="POST"> <!-- Form for editing the note -->
+    <div class="form-group">
+      <label for="title">Title</label> <!-- Label for the note title input field -->
+      <input type="text" class="form-control" id="title" name="title" value="{{ note.title }}" required> <!-- Input field for note title with pre-filled value -->
+    </div>
+    <div class="form-group">
+      <label for="content">Content</label> <!-- Label for the note content textarea -->
+      <textarea class="form-control" id="content" name="content" rows="4" required>{{ note.content }}</textarea> <!-- Textarea for note content with pre-filled value -->
+    </div>
+    <button type="submit" class="btn btn-primary">Update Note</button> <!-- Submit button for updating the note -->
+  </form>
+  <a href="{{ url_for('index') }}">Cancel</a> <!-- Link to the 'index' page for canceling note editing -->
+{% endblock %}
