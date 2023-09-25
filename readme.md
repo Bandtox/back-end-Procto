@@ -29,7 +29,7 @@ To get this project up and running on your local machine, follow these steps:
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/your-project.git
+    git clone https://github.com/Bandtox/back-end-Procto.git
     ```
 
 2. Navigate to the project directory:
@@ -58,10 +58,4 @@ To get this project up and running on your local machine, follow these steps:
 - Experience the confirmation box when interacting with the application.
 
 
-## Acknowledgments
-
-- [Flask](https://flask.palletsprojects.com/en/2.1.x/): The web framework used in this project.
-- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML): The markup language for creating web pages.
-- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS): The styling language for web pages.
-- [GitHub](https://github.com/): Hosting and version control for open-source projects.
 
